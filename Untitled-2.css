@@ -1,0 +1,369 @@
+/*Github Source Code: wesleytran77*/
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.logo{
+    user-select: none;
+    font-size: 2.3rem;
+    font-family: 'Unbounded';
+}
+
+body{
+    padding: 2rem; /*give the page a equal cushion all around*/
+    background-color: rgba(62,62,62,.06);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homePage{
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    background-image: url("bgImage.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.navigation{
+    background-color: rgba(62,62,62, .4);
+    width: 100%;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.contact{
+    font-weight: 600;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 200;
+    width: 7rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.contact:hover{
+    background-color: white;
+    color: black; 
+}
+
+.tab{
+    font-size: .9rem;
+    letter-spacing: 1px;
+    font-weight: 200;cursor: pointer;
+}
+
+.tab:hover{
+    color: rgb(158, 157, 157);
+}
+
+.customLogo{
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+}
+
+.welcomePage{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8rem;
+    text-align: center;
+}
+
+.description{
+    width: 40%;
+    font-weight: 400;
+    font-size: 16px;
+    color: #00000087;
+    letter-spacing: 3px;
+}
+.bigText{  
+    width: 50%;
+    font-size: 3.3rem;
+    color: #0A5091;
+}
+
+.hours{
+    text-align: center;
+    font-size: 1rem;
+    background-color:#051a3a;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+.hours > *{
+    margin: 1.5rem;
+    color: white;
+}
+
+.hours h1{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.hours p{
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.footer{
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.footer h1{
+    color: #404040D9;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+.socialsContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+}
+
+.instagram{
+    width: 100%;
+    padding: 2rem;
+    padding-top: 6rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.instagram h1{
+    margin: 1rem;
+    grid-column: span 3;
+    color: #404040E6;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid rgba(62,62,62,.3);
+}
+
+
+.imgContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.imgContainer img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.navigation a{
+    color: white;
+    text-decoration: none;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    font-weight: 200;cursor: pointer;
+}
+
+.navigation a:hover{
+    color: rgb(158, 157, 157);
+}
+
+
+/*styles for service Div*/
+.services{
+    width: 100%;
+    background-image: url("servicesBG.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7rem 2rem;
+    margin-bottom: 8rem;
+}
+
+
+.services h1{
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    width: 100%;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin: 1.5rem;
+}
+
+.services a{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 1.5rem;
+    font-size: .7rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+.services a:hover{
+    background-color: rgb(255,255,255, .7);
+}
+
+
+
+.toggle-button{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+    margin: 1rem;
+}
+
+.bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+}
+
+.dropdown{
+    display: none;
+    flex-direction: column;
+    background-color: rgba(62,62,62, .4);
+    color: white;
+}
+
+.dropdown > *{
+    color: white;
+    list-style: none;
+    padding: 1rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+
+}
+
+
+.dropdown > *:hover{
+    background-color: rgb(255,255,255,.5);
+    color: black;
+}
+
+
+
+/*for smaller screens like phones*/
+@media (max-width: 750px){
+    .tab, .contact{
+        display: none;
+    }
+    .navigation{
+        justify-content: space-between;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    .dropdown.active{
+        display: flex;
+    }
+    .welcomePage{
+        justify-content: center;
+        flex-direction: column;
+        padding: 5rem 0;
+    }
+    .description{
+        width: 90%;
+    }
+    .bigText{
+        width: 90%;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+    .hours > *{
+        font-size: 13px;
+    }  
+    .instagram{
+        padding-top: 3rem;
+    }
+    .imgContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services{
+        padding: 4rem 1rem;
+    }
+    .services h1{
+        font-size: 2rem;
+    }
+    .services a{
+        padding: 1rem;
+        font-size: .5rem;
+    }
+    .instagram h1{
+        font-size: 20px;
+    }
+    .footer{
+        padding-top: 2rem;
+    }
+
+    .socialsContainer{
+        padding: 1rem;
+    }
+}
+
+
+
+/*handles medium-big screens*/
+@media (max-width: 1100px) and (min-width: 700px){
+    .welcomePage{
+        justify-content: center;
+        flex-direction: column;
+        padding: 8rem 0;
+    }
+    .description{
+        width: 90%;
+    }
+    .bigText{
+        width: 90%;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+    .hours > *{
+        font-size: 13px;
+    }  
+    .instagram{
+        padding-top: 3rem;
+    }
+    .imgContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+
+
+/*things to do: erase unneccesary code, add logo*/
