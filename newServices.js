@@ -2,7 +2,7 @@ const callButton= document.querySelector(".contact")
 
 //handles call button
 callButton.addEventListener("click", function(){
-    window.location.href = "tel:+9568544541"
+    window.location.href = "tel:+1 9568544541"
 })
 
 
