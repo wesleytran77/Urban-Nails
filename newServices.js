@@ -13,4 +13,3 @@ home.addEventListener("click", function(){
     document.location.href= "index.html"
 })
 
-//change all numbers to theirs
