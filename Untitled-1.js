@@ -18,12 +18,12 @@ toggleButton.addEventListener("click", () => {
 //controls "Call Us" buttons
 const callButton= document.querySelector(".contact")
 callButton.addEventListener("click", () =>{
-        window.location.href = "tel:+9568544541";
+        window.location.href = "tel:+1 9568544541";
 })
 
 const callButton2= document.querySelector(".contact2")
 callButton2.addEventListener("click", () =>{
-    window.location.href = "tel:+9568544541";
+    window.location.href = "tel:+1 9568544541";
 })
 
 
