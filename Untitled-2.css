@@ -15,7 +15,9 @@
 }
 
 body{
-    padding: 2rem; /*give the page a equal cushion all around*/
+    padding: 2rem;
+    padding-bottom: 0;
+    padding-top: 1.5rem;
     background-color: rgba(62,62,62,.06);
     display: flex;
     justify-content: center;
@@ -55,7 +57,7 @@ body{
 }
 
 .contact:hover{
-    background-color: #11614a;
+    background-color: #F0B000;
     color: white; 
     border: none;
 }
@@ -117,26 +119,6 @@ body{
 .hours p{
     font-weight: 200;
     letter-spacing: 2px;
-}
-
-.footer{
-    padding-top: 3rem;
-    width: 100%;
-    text-align: center;
-}
-
-.footer h1{
-    color: #404040D9;
-    font-weight: 400;
-    letter-spacing: 3px;
-    font-size: 30px;
-}
-
-.socialsContainer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 3rem;
 }
 
 .instagram{
@@ -234,8 +216,6 @@ body{
     background-color: rgb(255,255,255, .7);
 }
 
-
-
 .toggle-button{
     display: none;
     flex-direction: column;
@@ -273,6 +253,82 @@ body{
     background-color: rgb(255,255,255,.5);
     color: black;
 }
+
+
+/* footer styles */
+footer{
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2rem;
+}
+
+footer img{
+    text-align: center;
+    width: 100%;
+}
+
+.footerSection > *{
+    text-align: center;
+}
+
+footer h1{
+    font-weight: 500;
+    font-size: .9rem;
+    letter-spacing: 2px;
+    color: rgb(173, 146, 26);
+    margin-bottom: 1rem;
+}
+
+footer p, footer a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    margin: .7rem;
+    color: #404040D9;
+}
+
+footer a:hover{
+    color: rgb(173, 146, 26);
+}
+
+.socialsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSection svg{
+    cursor: pointer;
+    width: 1.6rem;
+    fill: #404040D9;
+}
+
+.footerSection svg:hover{
+    fill: rgb(173, 146, 26);
+}
+
+
+
+
+
+/* iphone styles */
+@media (max-width: 550px){
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;        
+    }
+    footer img{
+        width: 15rem;
+    }  
+}
+
+
+
+
 
 
 
@@ -335,10 +391,6 @@ body{
         padding-top: 2rem;
     }
 
-    .socialsContainer{
-        padding: 1rem;
-    }
-
     .customLogo{
         width: 15rem;
     }
@@ -372,6 +424,10 @@ body{
     }
     
 }
+
+
+
+
 
 
 
