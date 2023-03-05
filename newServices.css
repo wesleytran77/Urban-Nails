@@ -9,11 +9,15 @@
 }
 
 .titleContainer{
-    background-color: rgba(62,62,62,.06);
+    /* background-color: rgba(62,62,62,.06); */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 5rem;
+}
+
+body{
+    background-color: rgba(62,62,62,.06);
 }
 
 .title{
@@ -29,16 +33,17 @@
 .titleContainer button{
     height: 2.7rem;
     width: 7rem;
-    border: none;
-    background-color: black;
-    color: white;
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
     font-size: 1rem;
-    letter-spacing: 1px;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 .titleContainer button:hover{
-    background-color: white;
-    color: black;
+    background-color: #F0B000;
+    color: white;
     border: none;
 }
 
@@ -46,110 +51,242 @@
     width: 7rem;
 }
 
-.section{
-    padding: 0 5rem;
+.mainSection{
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 4rem 5rem;
+    background-color: #05241b;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.sectionTitle{
+.mainSection >*{
+    color:white;
     text-align: center;
-    margin-top: 3rem;
-    width: 100%;
-    color: #404040E6;
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: 4px;
-    padding-bottom: .5rem;
-    border-bottom: 1px solid rgba(62,62,62,.3);
 }
 
-.serviceContainer{
-    padding: 2rem;
+.mainSection h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;  
+    border-bottom: 3px dotted #F0B000;
+    margin-bottom: 3rem;
+}
+
+
+.servicesSection{
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
 }
 
-.service img{
-    width: 100%;
-    height: 85%;
-    border-radius: 10px;
-    padding-bottom: .3rem;
+.section{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
 }
 
-.service{
-    border-radius: 20px;
-    position: relative;
-    padding-bottom: .5rem;
+.section p {
+    line-height: 1.5rem;
+    width: 100%;
+    text-align: left;
+    margin: .2rem;
 }
 
-
-
-.service h1{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: .2rem;
+.serviceTitle{
+    letter-spacing: 1px;
     width: 100%;
-    position: absolute;
-    top: 92%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #404040E6;
-    font-size: 1.2rem;
-    font-weight: 400;
-    letter-spacing: 4px;
+    text-align: left;
+    text-decoration: underline;
+    font-weight: 300;
+    color: #F0B000;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+.color{
+    color: #F0B000;
+    margin: .7rem;
+    margin-top: 2rem;
+}
+
+.noMargin{
+    color: #F0B000;
+    margin: .7rem;
+    margin-top: 2rem; 
+}
+
+.lightweight{
+    font-weight: 300;
+}
+
+.margin{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.waxServices{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.waxServices p{
     text-align: center;
 }
 
-
-.footer{
-    padding-top: 3rem;
-    width: 100%;
-    background-color: rgba(62,62,62,.06);
+.center{
     text-align: center;
 }
 
-.footer h1{
+.bullet{
+    font-weight: 200;
+}
+
+.bullet:before{
+    content: "\2022";
+    margin-right: .5rem;
+}
+
+
+/* footer styles */
+footer{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2rem;
+}
+
+footer img{
+    text-align: center;
+    width: 100%;
+}
+
+.footerSection > *{
+    text-align: center;
+}
+
+footer h1{
+    font-weight: 500;
+    font-size: .9rem;
+    letter-spacing: 2px;
+    color: rgb(173, 146, 26);
+    margin-bottom: 1rem;
+}
+
+footer p, footer a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    margin: .7rem;
     color: #404040D9;
-    font-weight: 400;
-    letter-spacing: 3px;
-    font-size: 30px;
+}
+
+footer a:hover{
+    color: rgb(173, 146, 26);
 }
 
 .socialsContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 3rem;
 }
 
-@media (max-width: 600px){
+.footerSection svg{
+    cursor: pointer;
+    width: 1.6rem;
+    fill: #404040D9;
+}
+
+.footerSection svg:hover{
+    fill: rgb(173, 146, 26);
+}
+
+
+
+
+
+/* iphone styles */
+@media (max-width: 650px){
     .titleContainer{
         padding: 1rem 1.5rem; 
     }
 
-    .serviceContainer{
-        grid-template-columns: repeat(2, 1fr);
+    .mainSection{
+        padding: 3rem 1rem;
     }
 
-    .section{
-        padding: 0;
+    .section p{
+        font-size: 11px;
     }
 
-    .service h1{
+    .serviceTitle{
+        font-size: .9rem;
+        margin: 1rem;
+        margin-top: 2rem;
+    }
+
+    .color{
+        margin-top: 2rem;
+    }
+
+    .noMargin{
+        margin: 1rem;
+    }
+
+    .mainSection h1{
+        font-size: 1.5rem;
+        margin: 1rem;        
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;        
+    }
+
+    footer img{
+        width: 15rem;
+    } 
+}
+
+
+
+
+
+@media (max-width: 800px) and (min-width: 700px){
+    .section p{
         font-size: 14px;
-        margin: 0;
+    }
+
+    .serviceTitle{
+        font-size: 1rem;
+        margin: 1rem;
+        margin-top: 2rem;
+    }
+
+    .mainSection h1{
+        font-size: 1.7rem;     
     }
 }
 
 
-@media (max-width: 900px){
-
-    .serviceContainer{
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 700px) and (min-width: 600px){
+    .section p{
+        font-size: 13px;
     }
 
-    
+    .serviceTitle{
+        font-size: .9rem;
+        margin: 1rem;
+        margin-top: 2rem;
+    }
+
+    .mainSection h1{
+        font-size: 1.6rem;     
+    }
 }
