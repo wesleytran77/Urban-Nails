@@ -97,14 +97,14 @@ body{
 
 .hours{
     text-align: center;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     background-color: #05241b;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 5rem 0;
+    padding: 4.5rem 0;
 }
 
 .hours > *{
@@ -432,7 +432,6 @@ footer img{
     }
     
 }
-
 
 
 
