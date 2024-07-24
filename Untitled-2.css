@@ -86,7 +86,8 @@ body{
     font-weight: 400;
     font-size: 16px;
     color: #00000087;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
+    word-spacing: 2.1px;
 }
 .bigText{  
     width: 50%;
@@ -148,7 +149,7 @@ body{
 .imgContainer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+    grid-gap: 10px;
 }
 
 .imgContainer img{
@@ -169,7 +170,7 @@ body{
 }
 
 .navigation a:hover{
-    color: rgb(158, 157, 157);
+    color: #F0B000;
 }
 
 .services{
@@ -259,9 +260,12 @@ body{
 footer{
     width: 100%;
     padding: 2rem;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 2rem;
+    grid-gap: 2rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer img{
@@ -275,17 +279,18 @@ footer img{
 
 footer h1{
     font-weight: 500;
-    font-size: .9rem;
+    font-size: 14px;
     letter-spacing: 2px;
     color: rgb(173, 146, 26);
     margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
 footer p, footer a{
     display: block;
     text-decoration: none;
-    font-size: 14px;
-    margin: .7rem;
+    font-size: 13px;
+    margin: .6rem;
     color: #404040D9;
 }
 
@@ -309,6 +314,9 @@ footer a:hover{
     fill: rgb(173, 146, 26);
 }
 
+footer img{
+    width: 250px;
+}
 
 
 
@@ -424,6 +432,12 @@ footer a:hover{
     }
     
 }
+
+
+
+
+
+
 
 
 
